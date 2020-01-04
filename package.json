@@ -1,0 +1,38 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "kvell-scripts start",
+    "build": "kvell-scripts build",
+    "debug": "kvell-scripts debug",
+    "test": "kvell-scripts test",
+    "generate": "kvell-gen"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "i": "^0.3.6",
+    "kvell-db-plugin-mongoose": "^1.0.1-alpha.1",
+    "kvell-scripts": "1.0.1-alpha.4",
+    "npm": "^6.13.4"
+  },
+  "eslintConfig": {
+    "extends": "kvell-scripts"
+  },
+  "apidoc": {
+    "name": "apidoc-example",
+    "version": "0.1.0",
+    "description": "Api documentation for the project",
+    "title": "Ezhuthali API",
+    "header": {
+      "title": "ezhuthali/API documentation"
+    },
+    "footer": {
+      "title": "copyrights"
+    },
+    "template": {
+      "withGenerator": true
+    }
+  }
+}
