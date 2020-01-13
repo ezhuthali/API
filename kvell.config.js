@@ -6,7 +6,10 @@ module.exports = {
   }, {
     "name": "admin",
     "path": "/api/v1/admin"
+  }, {
+    "name": "event",
+    "path": "/api/v1/event"
   }],
   models: ["user", "credential", "event", "folder"],
-  autoRequireRoutes: true
+  autoRequireRoutes: false
 };

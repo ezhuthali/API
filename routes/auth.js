@@ -2,12 +2,7 @@ const authRouter = require("kvell-scripts").router();
 // eslint-disable-next-line no-unused-vars
 const authController = require("../controllers").auth;
 
-authRouter.get("/", (request, response) => {
-  // get method
-});
-
-authRouter.post("/", (request, response) => {
-  // post method
+authRouter.post("/login", (request, response) => {
 });
 
 authRouter.put("/", (request, response) => {

@@ -2,19 +2,15 @@ const adminRouter = require("kvell-scripts").router();
 // eslint-disable-next-line no-unused-vars
 const adminController = require("../controllers").admin;
 
-adminRouter.get("/", (request, response) => {
+adminRouter.get("/list-users", (request, response) => {
   // get method
 });
 
-adminRouter.post("/", (request, response) => {
+adminRouter.post("/user", (request, response) => {
   // post method
 });
 
-adminRouter.put("/", (request, response) => {
-  // put method
-});
-
-adminRouter.delete("/", (request, response) => {
+adminRouter.delete("/delete/:id", (request, response) => {
   // delete method
 });
 
