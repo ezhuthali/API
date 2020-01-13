@@ -1,6 +1,7 @@
 const routes = require('../routes');
 const bodyParser = require('body-parser');
 const token = require('../utils/auth');
+
 const formidable = (request, response, next) => {
 	if (request.headers["content-type"].startsWith('multipart/for-data')) {
 		const form = new require('formidable').IncomingForm();
@@ -22,7 +23,6 @@ const formidable = (request, response, next) => {
  * @param {import ("kvell-scripts").KvellServerObject} server
  */
 const globalMiddlewares = (app, server) => {
-
 	// content-type
 	app.use(formidable, bodyParser.json(), bodyParser.urlencoded({ extended: true }));
 	// public routes
